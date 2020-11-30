@@ -4,3 +4,23 @@ from django.shortcuts import render
 def index(request) :
     # context = {'ment' : '여기까지 잘되시나요?'}
     return render(request, 'index.html')
+
+
+def garlic(request) :
+    # context = {'ment' : '여기까지 잘되시나요?'}
+    return render(request, 'garlic.html')
+
+
+def cabbage(request) :
+    # context = {'ment' : '여기까지 잘되시나요?'}
+    return render(request, 'cabbage.html')
+
+
+def radish(request) :
+    # context = {'ment' : '여기까지 잘되시나요?'}
+    return render(request, 'radish.html')
+
+
+def onion(request) :
+    # context = {'ment' : '여기까지 잘되시나요?'}
+    return render(request, 'onion.html')

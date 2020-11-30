@@ -62,7 +62,8 @@
                 <ul class="nav side-menu">
                   <li><a href="/"><i class="fa fa-home"></i> Home </a>
                   </li>
-                  <li><a href="/garlic"><i class="fa fa-edit"></i> 마늘</a>
+                  <!--<img src="{% static 'production/images/radish3.png' %}" width="30" alt="">-->
+                  <li><a href="/garlic"> 마늘</a>
                   </li>
                   <li><a href="/onion"><i class="fa fa-desktop"></i> 양파 </a>
                   </li>
@@ -104,11 +105,8 @@
         <div class="top_nav">
           <div class="nav_menu">
               <nav class="nav navbar-nav">
-
               <ul class=" navbar-right">
-
-                <li class="nav-item dropdown open" style="padding-middle: 15px;">
-                  메롱
+                <li class="nav-item dropdown open" style="padding-left: 15px;">
                   <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
                     <img src="{% static 'production/images/img.jpg' %}" alt="">John Doe
                   </a>
@@ -122,7 +120,12 @@
                     <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
                   </div>
                 </li>
+
                 <li role="presentation" class="nav-item dropdown open">
+                  <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
                   <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
                     <li class="nav-item">
                       <a class="dropdown-item">
@@ -233,7 +236,7 @@
 
                 <div class="row x_title">
                   <div class="col-md-6">
-                    <h3>마늘 수요 예측 곡선 <small> 2020년도 기준</small></h3>
+                    <h3>배추 수요 예측 곡선 <small> 2020년도 기준</small></h3>
                   </div>
                   <div class="col-md-6">
                     <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
@@ -306,7 +309,7 @@
 
                 <div class="row x_title">
                   <div class="col-md-6">
-                    <h3> 마늘 수요 예측 <small>1주</small></h3>
+                    <h3> 배추 수요 예측 <small>1주</small></h3>
                   </div>
 <!--                  <div class="col-md-6">-->
 <!--                    <div id="reportrange2" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">-->
@@ -373,7 +376,7 @@
 
                 <div class="row x_title">
                   <div class="col-md-7">
-                    <h3>마늘 수요 예측<small>11월 기준</small></h3>
+                    <h3>배추 수요 예측<small>11월 기준</small></h3>
                   </div>
 <!--                  <div class="col-md-5">-->
 <!--                    <div id="reportrange3" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">-->

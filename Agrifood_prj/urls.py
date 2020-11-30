@@ -22,5 +22,10 @@ from agrifoodApp.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
+    path('garlic/', garlic, name='garlic'),
+    path('onion/', onion, name='onion'),
+    path('radish/', radish, name='radish'),
+    path('cabbage/', cabbage, name='cabbage'),
+
     # path('',include('agrifoodApp'))
 ]
