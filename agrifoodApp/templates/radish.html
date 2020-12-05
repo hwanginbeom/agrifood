@@ -59,19 +59,21 @@
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
                 <h3>General</h3>
-                                <ul class="nav side-menu">
-                  <li><a href="/"><i class="fa fa-home"></i> Home </a>
+                <ul class="nav side-menu">
+                  <li><a href="/"><img src="{% static 'production/images/home.png' %}"  style="width:50px"></i> Home </a>
                   </li>
-                  <li><a href="/garlic"><i class="fa fa-edit"></i> 마늘</a>
+                   <li><a href="/garlic"><img src="{% static 'production/images/garlic.png' %}"  style="width:50px"></i> 마늘 </a>
                   </li>
-                  <li><a href="/onion"><i class="fa fa-desktop"></i> 양파 </a>
+                  <li><a href="/onion"><img src="{% static 'production/images/onion.png' %}"  style="width:60px"></i> 양파 </a>
                   </li>
-                  <li><a href="/cabbage"><i class="fa fa-table"></i> 배추 </a>
+                  <li><a href="/cabbage"><img src="{% static 'production/images/cabbage.png' %}"  style="width:60px"></i> 배추 </a>
                   </li>
-                  <li><a href="/radish"><i class="fa fa-bar-chart-o"></i> 무 </a>
+                  <li><a href="/radish"><img src="{% static 'production/images/radish.png' %}"  style="width:60px"></i> 무 </a>
                   </li>
 
                 </ul>
+
+
               </div>
               <div class="menu_section">
                 <h3>Live On</h3>
@@ -101,93 +103,6 @@
         </div>
 
         <!-- top navigation -->
-        <div class="top_nav">
-          <div class="nav_menu">
-              <nav class="nav navbar-nav">
-              <ul class=" navbar-right">
-                <li class="nav-item dropdown open" style="padding-left: 15px;">
-                  <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                    <img src="{% static 'production/images/img.jpg' %}" alt="">John Doe
-                  </a>
-                  <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item"  href="javascript:;"> Profile</a>
-                      <a class="dropdown-item"  href="javascript:;">
-                        <span class="badge bg-red pull-right">50%</span>
-                        <span>Settings</span>
-                      </a>
-                  <a class="dropdown-item"  href="javascript:;">Help</a>
-                    <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
-                  </div>
-                </li>
-
-                <li role="presentation" class="nav-item dropdown open">
-                  <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
-                    <i class="fa fa-envelope-o"></i>
-                    <span class="badge bg-green">6</span>
-                  </a>
-                  <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
-                    <li class="nav-item">
-                      <a class="dropdown-item">
-                        <span class="image"><img src="{% static 'production/images/img.jpg' %}" alt="Profile Image" /></span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="dropdown-item">
-                        <span class="image"><img src="{% static 'production/images/img.jpg' %}" alt="Profile Image" /></span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="dropdown-item">
-                        <span class="image"><img src="{% static 'production/images/img.jpg' %}" alt="Profile Image" /></span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="dropdown-item">
-                        <span class="image"><img src="{% static 'production/images/img.jpg' %}" alt="Profile Image" /></span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <div class="text-center">
-                        <a class="dropdown-item">
-                          <strong>See All Alerts</strong>
-                          <i class="fa fa-angle-right"></i>
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
         <!-- /top navigation -->
 
         <!-- page content -->
@@ -235,7 +150,7 @@
 
                 <div class="row x_title">
                   <div class="col-md-6">
-                    <h3>무 수요 예측 곡선 <small> 2020년도 기준</small></h3>
+                    <h3><b>무 수요 예측 곡선 </b><small> - 2020년도 기준</small></h3>
                   </div>
                   <div class="col-md-6">
                     <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
@@ -308,7 +223,7 @@
 
                 <div class="row x_title">
                   <div class="col-md-6">
-                    <h3> 무 수요 예측 <small>1주</small></h3>
+                    <h3><b> 무 수요 예측 </b><small> - 1주</small></h3>
                   </div>
 <!--                  <div class="col-md-6">-->
 <!--                    <div id="reportrange2" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">-->
@@ -375,7 +290,7 @@
 
                 <div class="row x_title">
                   <div class="col-md-7">
-                    <h3>무 수요 예측<small>11월 기준</small></h3>
+                    <h3><b>무 수요 예측</b><small> - 11월 기준</small></h3>
                   </div>
 <!--                  <div class="col-md-5">-->
 <!--                    <div id="reportrange3" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">-->

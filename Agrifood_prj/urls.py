@@ -26,6 +26,7 @@ urlpatterns = [
     path('onion/', onion, name='onion'),
     path('radish/', radish, name='radish'),
     path('cabbage/', cabbage, name='cabbage'),
+    path('map/', map, name='map'),
 
     # path('',include('agrifoodApp'))
 ]

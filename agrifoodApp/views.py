@@ -24,3 +24,7 @@ def radish(request) :
 def onion(request) :
     # context = {'ment' : '여기까지 잘되시나요?'}
     return render(request, 'onion.html')
+
+def map(request) :
+    # context = {'ment' : '여기까지 잘되시나요?'}
+    return render(request, 'map.html')
