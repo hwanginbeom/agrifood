@@ -57,7 +57,7 @@
                 }
             </style>
       <style>
-                #map_0082aaf7a1854641aee48e755d835947 {
+                #map_720e099fcc6d4d2a9488354f0699b8be {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -97,7 +97,7 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a href="/"><img src="{% static 'production/images/home.png' %}"  style="width:50px"></i> Home </a>
+                  <li><a href="/"><img src="{% static 'production/images/truck.png' %}"  style="width:50px"></i> Home </a>
                   </li>
                   <li><a href="/garlic"><img src="{% static 'production/images/garlic.png' %}"  style="width:60px"></i> 마늘 </a>
                   </li>
@@ -144,39 +144,110 @@
         <!-- page content -->
         <div class="right_col" role="main">
           <!-- top tiles -->
-          <div class="row" style="display: inline-block; margin-left: 200px;" >
-          <div class="tile_count">
-<!--            <div class="col-md-3 col-sm-4  tile_stats_count" style="width: 300px;">-->
-<!--              <span class="count_top"><i class="fa fa-clock-o"></i> 오늘의 수요량</span>-->
-<!--              <div class="count"> 200</div>-->
-<!--              <span class="count_bottom"><i class="green"><i class="fa fa-sort-desc"></i>4% </i> 전일 대비 </span>-->
-<!--            </div>-->
-<!--            <div class="col-md-3 col-sm-4  tile_stats_count" style="width: 300px;">-->
-<!--              <span class="count_top"><i class="fa fa-clock-o"></i> 1주 수요량</span>-->
-<!--              <div class="count" > 300 </div>-->
-<!--              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>3% </i> 전주 대비</span>-->
-<!--            </div>-->
-<!--            <div class="col-md-3 col-sm-4  tile_stats_count" style="width: 300px;">-->
-<!--              <span class="count_top"><i class="fa fa-clock-o"></i> 월 수요량</span>-->
-<!--              <div class="count green" > 400 </div>-->
-<!--              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> 전월 대비</span>-->
-<!--            </div>-->
-<!--            <div class="col-md-3 col-sm-4  tile_stats_count" style="width: 300px;">-->
-<!--              <span class="count_top"><i class="fa fa-clock-o"></i> 연 수요량</span>-->
-<!--              <div class="count" > 500</div>-->
-<!--              <span class="count_bottom"><i class="red"><i class="fa fa-sort-desc"></i>12% </i> 전년 대비</span>-->
-<!--            </div>-->
-<!--            <div class="col-md-2 col-sm-4  tile_stats_count">-->
-<!--              <span class="count_top"><i class="fa fa-user"></i> Total Collections</span>-->
-<!--              <div class="count">2,315</div>-->
-<!--              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>-->
-<!--            </div>-->
-<!--            <div class="col-md-2 col-sm-4  tile_stats_count">-->
-<!--              <span class="count_top"><i class="fa fa-user"></i> Total Connections</span>-->
-<!--              <div class="count">7,325</div>-->
-<!--              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>-->
-<!--            </div>-->
-          </div>
+          <div class="row" style="display: inline-block;" >
+          <div class="row" style="width:1200px;">
+                  <div class="x_panel">
+                    <div class="x_title">
+                      <h2>Daily active users <small>Sessions</small></h2>
+                      <ul class="nav navbar-right panel_toolbox">
+                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Settings 1</a>
+                              <a class="dropdown-item" href="#">Settings 2</a>
+                            </div>
+                        </li>
+                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="temperature"><b>Monday</b>, 07:30 AM
+                            <span>F</span>
+                            <span><b>C</b></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <div class="weather-icon">
+                            <canvas height="84" width="84" id="partly-cloudy-day"></canvas>
+                          </div>
+                        </div>
+                        <div class="col-sm-8">
+                          <div class="weather-text">
+                            <h2>Texas <br><i>Partly Cloudy Day</i></h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="weather-text pull-right">
+                          <h3 class="degrees">1</h3>
+                        </div>
+                      </div>
+
+                      <div class="clearfix"></div>
+
+                      <div class="row weather-days">
+                        <div class="col-sm-2">
+                          <div class="daily-weather">
+                            <h2 class="day">Mon</h2>
+                            <h3 class="degrees">6 / -6</h3>
+                            <canvas id="clear-day" width="32" height="32"></canvas>
+                            <h5>15 <i>km/h</i></h5>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="daily-weather">
+                            <h2 class="day">Tue</h2>
+                            <h3 class="degrees">4 / -6</h3>
+                            <canvas height="32" width="32" id="rain"></canvas>
+                            <h5>12 <i>km/h</i></h5>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="daily-weather">
+                            <h2 class="day">Wed</h2>
+                            <h3 class="degrees">7 / -1</h3>
+                            <canvas height="32" width="32" id="snow"></canvas>
+                            <h5>14 <i>km/h</i></h5>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="daily-weather">
+                            <h2 class="day">Thu</h2>
+                            <h3 class="degrees">9 / 0</h3>
+                            <canvas height="32" width="32" id="sleet"></canvas>
+                            <h5>15 <i>km/h</i></h5>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="daily-weather">
+                            <h2 class="day">Fri</h2>
+                            <h3 class="degrees">9 / -1</h3>
+                            <canvas height="32" width="32" id="wind"></canvas>
+                            <h5>11 <i>km/h</i></h5>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="daily-weather">
+                            <h2 class="day">Sat</h2>
+                            <h3 class="degrees">7 / -3</h3>
+                            <canvas height="32" width="32" id="cloudy"></canvas>
+                            <h5>10 <i>km/h</i></h5>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
         </div>
           <!-- /top tiles -->
 
@@ -185,7 +256,7 @@
               <div class="dashboard_graph">
                 <div class="row x_title">
                   <div class="col-md-6">
-                    <h3><b> 물류 창고와 서울시 전통 시장 위치</b> <small></small></h3>
+                    <h3><b>서울시 물류 창고 / 전통시장 위치</b> <small></small></h3>
                   </div>
                   <div class="col-md-6">
 <!--                    <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">-->
@@ -255,11 +326,11 @@
           <div class="row">
 
             <div class="col-md-6 col-sm-6 ">
-              <div class="dashboard_graph">
+              <div class="dashboard_graph"style=" width:80%;">
 
                 <div class="row x_title">
                   <div class="col-md-6">
-                    <h4><b>물류창고 가용 범위 내 시장</b> <small></small></h4>
+                    <h4 style="width:250px;"><b>가용 범위 내 전통 시장</b> <small></small></h4>
                   </div>
 <!--                  <div class="col-md-6">-->
 <!--                    <div id="reportrange2" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">-->
@@ -276,81 +347,65 @@
                                 <tr>
                                 <th>No</th>
                                 <th>시장 이름</th>
-                                <th>수요량</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                 <th scope="row">1</th>
-                                <td>현대시장</td>
-                                <td>Otto</td>
+                                <td>공릉동도깨비시장</td>
                                 </tr>
                                 <tr>
                                 <th scope="row">2</th>
-                                <td>청량리수산시장</td>
-                                <td>Thornton</td>
+                                <td>이문제일시장</td>
                                 </tr>
                                 <tr>
                                 <th scope="row">3</th>
-                                <td>청량리전통시장</td>
-                                <td>the Bird</td>
+                                <td>회기시장</td>
                                 </tr>
                                 <tr>
                                 <th scope="row">4</th>
-                                <td>전곡시장</td>
-                                <td>the Bird</td>
+                                <td>이경시장</td>
                                 </tr>
                                 <tr>
                                 <th scope="row">5</th>
-                                <td>성동용답상가시장</td>
-                                <td>the Bird</td>
+                                <td>석관황금시장</td>
                                 </tr>
                                 <tr>
                                 <th scope="row">6</th>
-                                <td>석관황금시장</td>
-                                <td>the Bird</td>
+                                <td>석관시장</td>
                                 </tr>
                                 <tr>
                                 <th scope="row">7</th>
-                                <td>청평화시장</td>
-                                <td>the Bird</td>
+                                <td>중랑교종합상가</td>
                                 </tr>
                                 <tr>
                                 <th scope="row">8</th>
-                                <td>서울중앙시장</td>
-                                <td>the Bird</td>
+                                <td>우림골목시장</td>
                                 </tr>
                                 <tr>
                                 <th scope="row">9</th>
-                                <td>면목골목시장</td>
-                                <td>the Bird</td>
+                                <td>사가정시장</td>
                                 </tr>
                                 <tr>
                                 <th scope="row">10</th>
-                                <td>면목시장</td>
-                                <td>the Bird</td>
+                                <td>동원시장</td>
                                 </tr>
                                 <tr>
                                 <th scope="row">11</th>
-                                <td>사가정시장</td>
-                                <td>the Bird</td>
+                                <td>신아타운</td>
                                 </tr>
                                 <tr>
                                 <th scope="row">12</th>
-                                <td>동원시장</td>
-                                <td>the Bird</td>
+                                <td>동성타워프라자</td>
                                 </tr>
                                 <th scope="row">13</th>
-                                <td>신아타운</td>
-                                <td>the Bird</td>
+                                <td>동부골목시장</td>
                                 </tr>
                                 <th scope="row">14</th>
-                                <td>동성타워프라자</td>
-                                <td>the Bird</td>
+                                <td>동원골목시장</td>
                                 </tr>
                                 <th scope="row">15</th>
-                                <td>동부골목시장</td>
-                                <td>the Bird</td>
+                                <td>태능엔터피아</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -407,7 +462,7 @@
             </div>
 
              <div class="col-md-6 col-sm-6 ">
-              <div class="dashboard_graph">
+              <div class="dashboard_graph"style=" width:120%;margin-left: -110;">
 
                 <div class="row x_title">
                   <div class="col-md-7">
@@ -422,7 +477,8 @@
                 </div>
 
                 <div class="col-md-12 col-sm-12 " style="height: 450px; ">
-                   <div class="folium-map" id="map_0082aaf7a1854641aee48e755d835947" ></div>
+                    <div class="folium-map" id="map_720e099fcc6d4d2a9488354f0699b8be" ></div>
+
                 </div>
 <!--                <div class="col-md-3 col-sm-3  bg-white">-->
 <!--                  <div class="x_title">-->
@@ -1059,18 +1115,17 @@
             </div>
             <div class="col-md-3 col-sm-4  tile_stats_count" style="width: 300px;">
               <span class="count_top"><i class="fa fa-clock-o"></i> 물류 창고 수요 예측량</span>
-              <div class="count" > 300 </div>
-              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>3% </i> 전주 대비</span>
+              <div class="count" > 151.57 </div>
+              <span class="count_bottom"><i class="red"><i class="fa fa-sort-desc"></i>3.8% </i> 전일 대비</span>
             </div>
             <div class="col-md-3 col-sm-4  tile_stats_count" style="width: 300px;">
-              <span class="count_top"><i class="fa fa-clock-o"></i> 현재 물류 창고 재고량</span>
-              <div class="count green" > 400 </div>
-              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> 전월 대비</span>
+              <span class="count_top"><i class="fa fa-clock-o"></i> 현재 물류 창고 재고량(가정)</span>
+              <div class="count green" > 17 </div>
+              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>8% </i> 재고량</span>
             </div>
             <div class="col-md-3 col-sm-4  tile_stats_count" style="width: 300px;">
               <span class="count_top"><i class="fa fa-clock-o"></i> 물류 창고 필요량</span>
-              <div class="count" > 500</div>
-              <span class="count_bottom"><i class="red"><i class="fa fa-sort-desc"></i>12% </i> 전년 대비</span>
+              <div class="count" > 134.57</div>
             </div>
               </div>
 
@@ -7436,12 +7491,12 @@
 </script>
     <script>
 
-            var map_0082aaf7a1854641aee48e755d835947 = L.map(
-                "map_0082aaf7a1854641aee48e755d835947",
+            var map_720e099fcc6d4d2a9488354f0699b8be = L.map(
+                "map_720e099fcc6d4d2a9488354f0699b8be",
                 {
-                    center: [37.6109902, 127.0659356],
+                    center: [37.60104902, 127.0659356],
                     crs: L.CRS.EPSG3857,
-                    zoom: 12,
+                    zoom: 13,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -7451,401 +7506,426 @@
 
 
 
-            var tile_layer_70d21cd5c8fc409698483d655782f383 = L.tileLayer(
+            var tile_layer_a5dbf2bd220d46f4860ea517c4e87de4 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_0082aaf7a1854641aee48e755d835947);
+            ).addTo(map_720e099fcc6d4d2a9488354f0699b8be);
 
 
-            var marker_ee076febd84644d2a4656d3389dd2ec1 = L.marker(
-                [37.57831397, 127.0410797],
+            var marker_cc6ea4b8ebc348e5996ef3c58c5c4407 = L.marker(
+                [37.62285493, 127.0762232],
                 {}
-            ).addTo(map_0082aaf7a1854641aee48e755d835947);
+            ).addTo(map_720e099fcc6d4d2a9488354f0699b8be);
 
 
-            var icon_99a2ea8077074d76a6134d38699cc41c = L.AwesomeMarkers.icon(
+            var icon_7d2230044aaa48f78ec95b4fe07f85ad = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_ee076febd84644d2a4656d3389dd2ec1.setIcon(icon_99a2ea8077074d76a6134d38699cc41c);
+            marker_cc6ea4b8ebc348e5996ef3c58c5c4407.setIcon(icon_7d2230044aaa48f78ec95b4fe07f85ad);
 
 
-        var popup_5fcb7de629b04f7ab97156e365896b81 = L.popup({"maxWidth": "100%"});
+        var popup_d369a8ff33e54346aee78214b9d47d3f = L.popup({"maxWidth": "100%"});
 
 
-            var html_ec64872b13654a2a9a2e9133347a1e3c = $(`<div id="html_ec64872b13654a2a9a2e9133347a1e3c" style="width: 100.0%; height: 100.0%;">청량리수산시장</div>`)[0];
-            popup_5fcb7de629b04f7ab97156e365896b81.setContent(html_ec64872b13654a2a9a2e9133347a1e3c);
+            var html_f801d43fabcf41fea5ad0ecaab8c3c11 = $(`<div id="html_f801d43fabcf41fea5ad0ecaab8c3c11" style="width: 100.0%; height: 100.0%;">공릉동도깨비시장</div>`)[0];
+            popup_d369a8ff33e54346aee78214b9d47d3f.setContent(html_f801d43fabcf41fea5ad0ecaab8c3c11);
 
 
-        marker_ee076febd84644d2a4656d3389dd2ec1.bindPopup(popup_5fcb7de629b04f7ab97156e365896b81)
+        marker_cc6ea4b8ebc348e5996ef3c58c5c4407.bindPopup(popup_d369a8ff33e54346aee78214b9d47d3f)
         ;
 
 
 
 
-            var marker_6246fe725333411da00caa056e062b24 = L.marker(
-                [37.58098784, 127.043361],
+            var marker_e85a7aac0d594a458c398fe4b36a4c5d = L.marker(
+                [37.60466927, 127.06243219999999],
                 {}
-            ).addTo(map_0082aaf7a1854641aee48e755d835947);
+            ).addTo(map_720e099fcc6d4d2a9488354f0699b8be);
 
 
-            var icon_4e80aed52c6f4059af3bcf3a5c8d81da = L.AwesomeMarkers.icon(
+            var icon_cb01e7210ae94f0baab532b32c0f862c = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_6246fe725333411da00caa056e062b24.setIcon(icon_4e80aed52c6f4059af3bcf3a5c8d81da);
+            marker_e85a7aac0d594a458c398fe4b36a4c5d.setIcon(icon_cb01e7210ae94f0baab532b32c0f862c);
 
 
-        var popup_51f997e090a64df2a97078afbcaecc28 = L.popup({"maxWidth": "100%"});
+        var popup_337a21d138c049249a31a9cc88c7c7d1 = L.popup({"maxWidth": "100%"});
 
 
-            var html_b3a0a39e81ba4e03a5ebfc3774c3958b = $(`<div id="html_b3a0a39e81ba4e03a5ebfc3774c3958b" style="width: 100.0%; height: 100.0%;">청량리전통시장</div>`)[0];
-            popup_51f997e090a64df2a97078afbcaecc28.setContent(html_b3a0a39e81ba4e03a5ebfc3774c3958b);
+            var html_7678af028b344aae90e58fffb1372201 = $(`<div id="html_7678af028b344aae90e58fffb1372201" style="width: 100.0%; height: 100.0%;">이문제일시장</div>`)[0];
+            popup_337a21d138c049249a31a9cc88c7c7d1.setContent(html_7678af028b344aae90e58fffb1372201);
 
 
-        marker_6246fe725333411da00caa056e062b24.bindPopup(popup_51f997e090a64df2a97078afbcaecc28)
+        marker_e85a7aac0d594a458c398fe4b36a4c5d.bindPopup(popup_337a21d138c049249a31a9cc88c7c7d1)
         ;
 
 
 
 
-            var marker_f5c558d3baba4581a95f15cb89f30f48 = L.marker(
-                [37.57797285, 127.0684128],
+            var marker_369ffdc477e9401d84e973f5cf3b0913 = L.marker(
+                [37.59116012, 127.05487620000001],
                 {}
-            ).addTo(map_0082aaf7a1854641aee48e755d835947);
+            ).addTo(map_720e099fcc6d4d2a9488354f0699b8be);
 
 
-            var icon_161c292f20954ab095425b7a006c9ee9 = L.AwesomeMarkers.icon(
+            var icon_9ad99c422d5f4d31b123dc17034e5f54 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_f5c558d3baba4581a95f15cb89f30f48.setIcon(icon_161c292f20954ab095425b7a006c9ee9);
+            marker_369ffdc477e9401d84e973f5cf3b0913.setIcon(icon_9ad99c422d5f4d31b123dc17034e5f54);
 
 
-        var popup_f52ed0bc46954257b769c52b593b5ca9 = L.popup({"maxWidth": "100%"});
+        var popup_c87c6f6e90cd41ef877ee2479a864324 = L.popup({"maxWidth": "100%"});
 
 
-            var html_9f53e2452b1243aea3798b29a55accf8 = $(`<div id="html_9f53e2452b1243aea3798b29a55accf8" style="width: 100.0%; height: 100.0%;">전곡시장</div>`)[0];
-            popup_f52ed0bc46954257b769c52b593b5ca9.setContent(html_9f53e2452b1243aea3798b29a55accf8);
+            var html_3111385992d14487a546229f2458676f = $(`<div id="html_3111385992d14487a546229f2458676f" style="width: 100.0%; height: 100.0%;">회기시장</div>`)[0];
+            popup_c87c6f6e90cd41ef877ee2479a864324.setContent(html_3111385992d14487a546229f2458676f);
 
 
-        marker_f5c558d3baba4581a95f15cb89f30f48.bindPopup(popup_f52ed0bc46954257b769c52b593b5ca9)
+        marker_369ffdc477e9401d84e973f5cf3b0913.bindPopup(popup_c87c6f6e90cd41ef877ee2479a864324)
         ;
 
 
 
 
-            var marker_8a71a7bcda0844c299155bcecd231f2f = L.marker(
-                [37.565684399999995, 127.05177179999998],
+            var marker_0834d01b238a428c97a3bb3a76978ca2 = L.marker(
+                [37.59488001, 127.06601200000001],
                 {}
-            ).addTo(map_0082aaf7a1854641aee48e755d835947);
+            ).addTo(map_720e099fcc6d4d2a9488354f0699b8be);
 
 
-            var icon_8d1a0e35d87b48cfb5a66b21ecba44ac = L.AwesomeMarkers.icon(
+            var icon_81ec90ee427e4693a3b4d6c4f886e41e = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_8a71a7bcda0844c299155bcecd231f2f.setIcon(icon_8d1a0e35d87b48cfb5a66b21ecba44ac);
+            marker_0834d01b238a428c97a3bb3a76978ca2.setIcon(icon_81ec90ee427e4693a3b4d6c4f886e41e);
 
 
-        var popup_f227d44cc1844831818bedd3416191ae = L.popup({"maxWidth": "100%"});
+        var popup_1c2ffc43b8f147ecb9bbdb3baa6bd3ab = L.popup({"maxWidth": "100%"});
 
 
-            var html_e9a9f592da0f41f18e1d3a1ed34247ff = $(`<div id="html_e9a9f592da0f41f18e1d3a1ed34247ff" style="width: 100.0%; height: 100.0%;">성동용답상가시장</div>`)[0];
-            popup_f227d44cc1844831818bedd3416191ae.setContent(html_e9a9f592da0f41f18e1d3a1ed34247ff);
+            var html_507bb59842f8445ea7ac2a5c5236066b = $(`<div id="html_507bb59842f8445ea7ac2a5c5236066b" style="width: 100.0%; height: 100.0%;">이경시장</div>`)[0];
+            popup_1c2ffc43b8f147ecb9bbdb3baa6bd3ab.setContent(html_507bb59842f8445ea7ac2a5c5236066b);
 
 
-        marker_8a71a7bcda0844c299155bcecd231f2f.bindPopup(popup_f227d44cc1844831818bedd3416191ae)
+        marker_0834d01b238a428c97a3bb3a76978ca2.bindPopup(popup_1c2ffc43b8f147ecb9bbdb3baa6bd3ab)
         ;
 
 
 
 
-            var marker_c5ce15aa33bd4e07ba290f1ac0a21bd9 = L.marker(
+            var marker_01dd82177df54895aabd089c96be0eea = L.marker(
                 [37.611876099999996, 127.06121189999999],
                 {}
-            ).addTo(map_0082aaf7a1854641aee48e755d835947);
+            ).addTo(map_720e099fcc6d4d2a9488354f0699b8be);
 
 
-            var icon_63b98fd6850a40d5916408fa6c499c7a = L.AwesomeMarkers.icon(
+            var icon_258b58478f014f0888df2e5bf19f857a = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_c5ce15aa33bd4e07ba290f1ac0a21bd9.setIcon(icon_63b98fd6850a40d5916408fa6c499c7a);
+            marker_01dd82177df54895aabd089c96be0eea.setIcon(icon_258b58478f014f0888df2e5bf19f857a);
 
 
-        var popup_271e4e9149a9466c9fd4ef44f6f71694 = L.popup({"maxWidth": "100%"});
+        var popup_fc0a99d31e9d4e738c315e4b78e68c4e = L.popup({"maxWidth": "100%"});
 
 
-            var html_c4ff665e9ecd4068821ca1ca25106e3f = $(`<div id="html_c4ff665e9ecd4068821ca1ca25106e3f" style="width: 100.0%; height: 100.0%;">석관황금시장</div>`)[0];
-            popup_271e4e9149a9466c9fd4ef44f6f71694.setContent(html_c4ff665e9ecd4068821ca1ca25106e3f);
+            var html_d013cd64e0524e4bbf82ae738083eaa5 = $(`<div id="html_d013cd64e0524e4bbf82ae738083eaa5" style="width: 100.0%; height: 100.0%;">석관황금시장</div>`)[0];
+            popup_fc0a99d31e9d4e738c315e4b78e68c4e.setContent(html_d013cd64e0524e4bbf82ae738083eaa5);
 
 
-        marker_c5ce15aa33bd4e07ba290f1ac0a21bd9.bindPopup(popup_271e4e9149a9466c9fd4ef44f6f71694)
+        marker_01dd82177df54895aabd089c96be0eea.bindPopup(popup_fc0a99d31e9d4e738c315e4b78e68c4e)
         ;
 
 
 
 
-            var marker_6515a18f8192497c8ac80a62e753a2b5 = L.marker(
-                [37.57119549, 127.01501110000001],
+            var marker_05e733689cb44939bbb5930ea8e86801 = L.marker(
+                [37.61046709, 127.0601462],
                 {}
-            ).addTo(map_0082aaf7a1854641aee48e755d835947);
+            ).addTo(map_720e099fcc6d4d2a9488354f0699b8be);
 
 
-            var icon_9e0f56eca42849b3acb324ba39a42fbc = L.AwesomeMarkers.icon(
+            var icon_d5cdd504e00c4fdaa9e9a1251937e50d = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_6515a18f8192497c8ac80a62e753a2b5.setIcon(icon_9e0f56eca42849b3acb324ba39a42fbc);
+            marker_05e733689cb44939bbb5930ea8e86801.setIcon(icon_d5cdd504e00c4fdaa9e9a1251937e50d);
 
 
-        var popup_ba26d12d9461470db1e1938f1a9d8305 = L.popup({"maxWidth": "100%"});
+        var popup_43e840c39e59463b93a0c3f6f237d8ab = L.popup({"maxWidth": "100%"});
 
 
-            var html_be0c9de19ae141cdb63c8f75ebfba8fa = $(`<div id="html_be0c9de19ae141cdb63c8f75ebfba8fa" style="width: 100.0%; height: 100.0%;">청평화시장</div>`)[0];
-            popup_ba26d12d9461470db1e1938f1a9d8305.setContent(html_be0c9de19ae141cdb63c8f75ebfba8fa);
+            var html_0e97537d9f8344fb973d8fe950b4d609 = $(`<div id="html_0e97537d9f8344fb973d8fe950b4d609" style="width: 100.0%; height: 100.0%;">석관시장</div>`)[0];
+            popup_43e840c39e59463b93a0c3f6f237d8ab.setContent(html_0e97537d9f8344fb973d8fe950b4d609);
 
 
-        marker_6515a18f8192497c8ac80a62e753a2b5.bindPopup(popup_ba26d12d9461470db1e1938f1a9d8305)
+        marker_05e733689cb44939bbb5930ea8e86801.bindPopup(popup_43e840c39e59463b93a0c3f6f237d8ab)
         ;
 
 
 
 
-            var marker_6f8eecb1ab20464b84d13bff6511652a = L.marker(
-                [37.56917817, 127.02000749999999],
+            var marker_8503bf11cbde4bf9baf705beddfe9bfa = L.marker(
+                [37.59413347, 127.0770169],
                 {}
-            ).addTo(map_0082aaf7a1854641aee48e755d835947);
+            ).addTo(map_720e099fcc6d4d2a9488354f0699b8be);
 
 
-            var icon_0924d31de4204b76af2c47e32dcbdd54 = L.AwesomeMarkers.icon(
+            var icon_1c3b1d1de2b54717a29e58c48ff8c29a = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_6f8eecb1ab20464b84d13bff6511652a.setIcon(icon_0924d31de4204b76af2c47e32dcbdd54);
+            marker_8503bf11cbde4bf9baf705beddfe9bfa.setIcon(icon_1c3b1d1de2b54717a29e58c48ff8c29a);
 
 
-        var popup_6bc6f92628f442889d0b20f11ce283df = L.popup({"maxWidth": "100%"});
+        var popup_1d332eb64ba3443f96374ce3e2421c45 = L.popup({"maxWidth": "100%"});
 
 
-            var html_b430e7c9591a43eda440ef4b00dbbadc = $(`<div id="html_b430e7c9591a43eda440ef4b00dbbadc" style="width: 100.0%; height: 100.0%;">서울중앙시장</div>`)[0];
-            popup_6bc6f92628f442889d0b20f11ce283df.setContent(html_b430e7c9591a43eda440ef4b00dbbadc);
+            var html_f6d11c11b7a643569b7ff46196134744 = $(`<div id="html_f6d11c11b7a643569b7ff46196134744" style="width: 100.0%; height: 100.0%;">중랑교종합상가</div>`)[0];
+            popup_1d332eb64ba3443f96374ce3e2421c45.setContent(html_f6d11c11b7a643569b7ff46196134744);
 
 
-        marker_6f8eecb1ab20464b84d13bff6511652a.bindPopup(popup_6bc6f92628f442889d0b20f11ce283df)
+        marker_8503bf11cbde4bf9baf705beddfe9bfa.bindPopup(popup_1d332eb64ba3443f96374ce3e2421c45)
         ;
 
 
 
 
-            var marker_0a9414df53bf4bbc8b501eb8d7d894c3 = L.marker(
-                [37.57901833, 127.0887068],
+            var marker_a22e7400e597407eafb4911a46973680 = L.marker(
+                [37.60979374, 127.1095952],
                 {}
-            ).addTo(map_0082aaf7a1854641aee48e755d835947);
+            ).addTo(map_720e099fcc6d4d2a9488354f0699b8be);
 
 
-            var icon_88821c5981b545e3ad75b6008447ed67 = L.AwesomeMarkers.icon(
+            var icon_a5c87aa1db4e4a12b243dd0e7fcc1d01 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_0a9414df53bf4bbc8b501eb8d7d894c3.setIcon(icon_88821c5981b545e3ad75b6008447ed67);
+            marker_a22e7400e597407eafb4911a46973680.setIcon(icon_a5c87aa1db4e4a12b243dd0e7fcc1d01);
 
 
-        var popup_1b77c54d1114491485eb05ced47c063b = L.popup({"maxWidth": "100%"});
+        var popup_3eb15d44085b4e0db72be69332c97808 = L.popup({"maxWidth": "100%"});
 
 
-            var html_2849e3d6426240c1b9d34222263b5563 = $(`<div id="html_2849e3d6426240c1b9d34222263b5563" style="width: 100.0%; height: 100.0%;">면목골목시장</div>`)[0];
-            popup_1b77c54d1114491485eb05ced47c063b.setContent(html_2849e3d6426240c1b9d34222263b5563);
+            var html_0c702ff08688431ea0126c03b1a5b481 = $(`<div id="html_0c702ff08688431ea0126c03b1a5b481" style="width: 100.0%; height: 100.0%;">우림골목시장</div>`)[0];
+            popup_3eb15d44085b4e0db72be69332c97808.setContent(html_0c702ff08688431ea0126c03b1a5b481);
 
 
-        marker_0a9414df53bf4bbc8b501eb8d7d894c3.bindPopup(popup_1b77c54d1114491485eb05ced47c063b)
+        marker_a22e7400e597407eafb4911a46973680.bindPopup(popup_3eb15d44085b4e0db72be69332c97808)
         ;
 
 
 
 
-            var marker_22b50ac467e741d4b694bb3350ae9949 = L.marker(
-                [37.58099465, 127.08674029999999],
-                {}
-            ).addTo(map_0082aaf7a1854641aee48e755d835947);
-
-
-            var icon_a5613226a445486ba43c07e10dfe00c0 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
-            );
-            marker_22b50ac467e741d4b694bb3350ae9949.setIcon(icon_a5613226a445486ba43c07e10dfe00c0);
-
-
-        var popup_0251641e43874f89afff5b8cafd2dba3 = L.popup({"maxWidth": "100%"});
-
-
-            var html_e8c3a37e4d9a4d67b49e8d4bc7c3d497 = $(`<div id="html_e8c3a37e4d9a4d67b49e8d4bc7c3d497" style="width: 100.0%; height: 100.0%;">면목시장</div>`)[0];
-            popup_0251641e43874f89afff5b8cafd2dba3.setContent(html_e8c3a37e4d9a4d67b49e8d4bc7c3d497);
-
-
-        marker_22b50ac467e741d4b694bb3350ae9949.bindPopup(popup_0251641e43874f89afff5b8cafd2dba3)
-        ;
-
-
-
-
-            var marker_25e077b79c5446a4ac34ccc96da281b6 = L.marker(
+            var marker_6a1d545f103241b39d26fcf41f9c3ce4 = L.marker(
                 [37.58375655, 127.0886608],
                 {}
-            ).addTo(map_0082aaf7a1854641aee48e755d835947);
+            ).addTo(map_720e099fcc6d4d2a9488354f0699b8be);
 
 
-            var icon_8620d72c83d94950b35eb804ed38528f = L.AwesomeMarkers.icon(
+            var icon_f734bca8532b43d685188c2b22b9e0d7 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_25e077b79c5446a4ac34ccc96da281b6.setIcon(icon_8620d72c83d94950b35eb804ed38528f);
+            marker_6a1d545f103241b39d26fcf41f9c3ce4.setIcon(icon_f734bca8532b43d685188c2b22b9e0d7);
 
 
-        var popup_fedd974d3ae34e848ab929f64cba3b49 = L.popup({"maxWidth": "100%"});
+        var popup_8f5e13f4a2e840c4885234b5b139a40c = L.popup({"maxWidth": "100%"});
 
 
-            var html_c40f6c08ca234020b394282c7a9fb549 = $(`<div id="html_c40f6c08ca234020b394282c7a9fb549" style="width: 100.0%; height: 100.0%;">사가정시장</div>`)[0];
-            popup_fedd974d3ae34e848ab929f64cba3b49.setContent(html_c40f6c08ca234020b394282c7a9fb549);
+            var html_edfde6c741db48b8bd9900b5dd26d930 = $(`<div id="html_edfde6c741db48b8bd9900b5dd26d930" style="width: 100.0%; height: 100.0%;">사가정시장</div>`)[0];
+            popup_8f5e13f4a2e840c4885234b5b139a40c.setContent(html_edfde6c741db48b8bd9900b5dd26d930);
 
 
-        marker_25e077b79c5446a4ac34ccc96da281b6.bindPopup(popup_fedd974d3ae34e848ab929f64cba3b49)
+        marker_6a1d545f103241b39d26fcf41f9c3ce4.bindPopup(popup_8f5e13f4a2e840c4885234b5b139a40c)
         ;
 
 
 
 
-            var marker_2ef870d21a6a4cf9ad266c604b10ac5b = L.marker(
+            var marker_d3a2384fc42d482980a5fb56ae1ad5c3 = L.marker(
                 [37.59152247, 127.09006969999999],
                 {}
-            ).addTo(map_0082aaf7a1854641aee48e755d835947);
+            ).addTo(map_720e099fcc6d4d2a9488354f0699b8be);
 
 
-            var icon_96fef43990ee4e57a530ae31a603eefb = L.AwesomeMarkers.icon(
+            var icon_cb388691c26b4c64bee8456068007aae = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_2ef870d21a6a4cf9ad266c604b10ac5b.setIcon(icon_96fef43990ee4e57a530ae31a603eefb);
+            marker_d3a2384fc42d482980a5fb56ae1ad5c3.setIcon(icon_cb388691c26b4c64bee8456068007aae);
 
 
-        var popup_5ab0222ad49042f995e23f197f38a95b = L.popup({"maxWidth": "100%"});
+        var popup_aaf3d22f725846e094e60bc9afb400a2 = L.popup({"maxWidth": "100%"});
 
 
-            var html_bf0504a8d2b4488d8331a158b6bd7e2a = $(`<div id="html_bf0504a8d2b4488d8331a158b6bd7e2a" style="width: 100.0%; height: 100.0%;">동원시장</div>`)[0];
-            popup_5ab0222ad49042f995e23f197f38a95b.setContent(html_bf0504a8d2b4488d8331a158b6bd7e2a);
+            var html_f96e93db36954bd6815aed1a1ac4664d = $(`<div id="html_f96e93db36954bd6815aed1a1ac4664d" style="width: 100.0%; height: 100.0%;">동원시장</div>`)[0];
+            popup_aaf3d22f725846e094e60bc9afb400a2.setContent(html_f96e93db36954bd6815aed1a1ac4664d);
 
 
-        marker_2ef870d21a6a4cf9ad266c604b10ac5b.bindPopup(popup_5ab0222ad49042f995e23f197f38a95b)
+        marker_d3a2384fc42d482980a5fb56ae1ad5c3.bindPopup(popup_aaf3d22f725846e094e60bc9afb400a2)
         ;
 
 
 
 
-            var marker_e51c6eeb326c46e2bea74d3552e50b97 = L.marker(
+            var marker_eda3c573dcf843e1a4063b45c9bdcb20 = L.marker(
                 [37.60783483, 127.09459509999999],
                 {}
-            ).addTo(map_0082aaf7a1854641aee48e755d835947);
+            ).addTo(map_720e099fcc6d4d2a9488354f0699b8be);
 
 
-            var icon_8545fe66d2054a6e86b3653d3ff622df = L.AwesomeMarkers.icon(
+            var icon_7e309137810249648acfa4750ffc42d0 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_e51c6eeb326c46e2bea74d3552e50b97.setIcon(icon_8545fe66d2054a6e86b3653d3ff622df);
+            marker_eda3c573dcf843e1a4063b45c9bdcb20.setIcon(icon_7e309137810249648acfa4750ffc42d0);
 
 
-        var popup_0e336bf4314a488faabd0c77de8df1e5 = L.popup({"maxWidth": "100%"});
+        var popup_a477a05eff084e8bb5be62f21e804f99 = L.popup({"maxWidth": "100%"});
 
 
-            var html_5dc31257b2084cf8a66c45b740e6bb59 = $(`<div id="html_5dc31257b2084cf8a66c45b740e6bb59" style="width: 100.0%; height: 100.0%;">신아타운</div>`)[0];
-            popup_0e336bf4314a488faabd0c77de8df1e5.setContent(html_5dc31257b2084cf8a66c45b740e6bb59);
+            var html_8a7329321a4e45cfbc30a8a77054afb6 = $(`<div id="html_8a7329321a4e45cfbc30a8a77054afb6" style="width: 100.0%; height: 100.0%;">신아타운</div>`)[0];
+            popup_a477a05eff084e8bb5be62f21e804f99.setContent(html_8a7329321a4e45cfbc30a8a77054afb6);
 
 
-        marker_e51c6eeb326c46e2bea74d3552e50b97.bindPopup(popup_0e336bf4314a488faabd0c77de8df1e5)
+        marker_eda3c573dcf843e1a4063b45c9bdcb20.bindPopup(popup_a477a05eff084e8bb5be62f21e804f99)
         ;
 
 
 
 
-            var marker_f649c1c57d9345efa4f2b0d56d53f5f8 = L.marker(
+            var marker_296de94ed27b45b7a3de3ec208103797 = L.marker(
                 [37.60923522, 127.0979045],
                 {}
-            ).addTo(map_0082aaf7a1854641aee48e755d835947);
+            ).addTo(map_720e099fcc6d4d2a9488354f0699b8be);
 
 
-            var icon_09f0178652984dce94ada7bc67f9f4cd = L.AwesomeMarkers.icon(
+            var icon_aea7ac4919754290b1abc9adbc6c9b70 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_f649c1c57d9345efa4f2b0d56d53f5f8.setIcon(icon_09f0178652984dce94ada7bc67f9f4cd);
+            marker_296de94ed27b45b7a3de3ec208103797.setIcon(icon_aea7ac4919754290b1abc9adbc6c9b70);
 
 
-        var popup_e339cb14e0454ad5813ddd0c7cfff064 = L.popup({"maxWidth": "100%"});
+        var popup_c5f219fb218749a7913fd6dc7c294d88 = L.popup({"maxWidth": "100%"});
 
 
-            var html_ab8e62b195c34506a3e25ffb4fa331fe = $(`<div id="html_ab8e62b195c34506a3e25ffb4fa331fe" style="width: 100.0%; height: 100.0%;">동성타워프라자</div>`)[0];
-            popup_e339cb14e0454ad5813ddd0c7cfff064.setContent(html_ab8e62b195c34506a3e25ffb4fa331fe);
+            var html_203d1be260594c8db82a8ab4a932df3d = $(`<div id="html_203d1be260594c8db82a8ab4a932df3d" style="width: 100.0%; height: 100.0%;">동성타워프라자</div>`)[0];
+            popup_c5f219fb218749a7913fd6dc7c294d88.setContent(html_203d1be260594c8db82a8ab4a932df3d);
 
 
-        marker_f649c1c57d9345efa4f2b0d56d53f5f8.bindPopup(popup_e339cb14e0454ad5813ddd0c7cfff064)
+        marker_296de94ed27b45b7a3de3ec208103797.bindPopup(popup_c5f219fb218749a7913fd6dc7c294d88)
         ;
 
 
 
 
-            var marker_52d4ded44bac40eba098cfa74f24a8c9 = L.marker(
+            var marker_4c3bbf6c3d3e4f6f9a8cb2136481c171 = L.marker(
                 [37.59417034, 127.07648229999998],
                 {}
-            ).addTo(map_0082aaf7a1854641aee48e755d835947);
+            ).addTo(map_720e099fcc6d4d2a9488354f0699b8be);
 
 
-            var icon_aa93e97da5ab4e14b02f7bf8da0c235e = L.AwesomeMarkers.icon(
+            var icon_86d376ac31dd4e4e85bc19910be5f991 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_52d4ded44bac40eba098cfa74f24a8c9.setIcon(icon_aa93e97da5ab4e14b02f7bf8da0c235e);
+            marker_4c3bbf6c3d3e4f6f9a8cb2136481c171.setIcon(icon_86d376ac31dd4e4e85bc19910be5f991);
 
 
-        var popup_2ffa47187d424b4fafc6aa2c9a4d901a = L.popup({"maxWidth": "100%"});
+        var popup_ef2a1c6e190940769e2899f896c5abfc = L.popup({"maxWidth": "100%"});
 
 
-            var html_3d52107f74c5427a9475d3aab62dd76e = $(`<div id="html_3d52107f74c5427a9475d3aab62dd76e" style="width: 100.0%; height: 100.0%;">동부골목시장</div>`)[0];
-            popup_2ffa47187d424b4fafc6aa2c9a4d901a.setContent(html_3d52107f74c5427a9475d3aab62dd76e);
+            var html_5fa8e28be5d74329a598904ed17fa850 = $(`<div id="html_5fa8e28be5d74329a598904ed17fa850" style="width: 100.0%; height: 100.0%;">동부골목시장</div>`)[0];
+            popup_ef2a1c6e190940769e2899f896c5abfc.setContent(html_5fa8e28be5d74329a598904ed17fa850);
 
 
-        marker_52d4ded44bac40eba098cfa74f24a8c9.bindPopup(popup_2ffa47187d424b4fafc6aa2c9a4d901a)
+        marker_4c3bbf6c3d3e4f6f9a8cb2136481c171.bindPopup(popup_ef2a1c6e190940769e2899f896c5abfc)
         ;
 
 
 
 
-            var marker_fa647b103c684b2592db63f3b2fc50d4 = L.marker(
+            var marker_04345b03857d464cb46f38256bd5b66c = L.marker(
+                [37.59164415, 127.0934412],
+                {}
+            ).addTo(map_720e099fcc6d4d2a9488354f0699b8be);
+
+
+            var icon_b420803cee1844f6959ddc9ba3ace84b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_04345b03857d464cb46f38256bd5b66c.setIcon(icon_b420803cee1844f6959ddc9ba3ace84b);
+
+
+        var popup_360722bd5d6e43a7b5ce8a137f09db9b = L.popup({"maxWidth": "100%"});
+
+
+            var html_b2c07878176a4d5a95ebe4b0a38c4371 = $(`<div id="html_b2c07878176a4d5a95ebe4b0a38c4371" style="width: 100.0%; height: 100.0%;">동원골목시장</div>`)[0];
+            popup_360722bd5d6e43a7b5ce8a137f09db9b.setContent(html_b2c07878176a4d5a95ebe4b0a38c4371);
+
+
+        marker_04345b03857d464cb46f38256bd5b66c.bindPopup(popup_360722bd5d6e43a7b5ce8a137f09db9b)
+        ;
+
+
+
+
+            var marker_0a5aaa58dd094503b4603ff431148400 = L.marker(
+                [37.60101069, 127.07775159999998],
+                {}
+            ).addTo(map_720e099fcc6d4d2a9488354f0699b8be);
+
+
+            var icon_82b2a807a373479987bd7c9706a4dde7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a5aaa58dd094503b4603ff431148400.setIcon(icon_82b2a807a373479987bd7c9706a4dde7);
+
+
+        var popup_1912ae03f4c14f548b58ddad44aea6e1 = L.popup({"maxWidth": "100%"});
+
+
+            var html_9ef227011f10473e87415c46ec8739b5 = $(`<div id="html_9ef227011f10473e87415c46ec8739b5" style="width: 100.0%; height: 100.0%;">태능엔터피아</div>`)[0];
+            popup_1912ae03f4c14f548b58ddad44aea6e1.setContent(html_9ef227011f10473e87415c46ec8739b5);
+
+
+        marker_0a5aaa58dd094503b4603ff431148400.bindPopup(popup_1912ae03f4c14f548b58ddad44aea6e1)
+        ;
+
+
+
+
+            var marker_bf42544b1ba24a3c8d21192f67c8f19e = L.marker(
                 [37.62104902, 127.06593559999999],
                 {}
-            ).addTo(map_0082aaf7a1854641aee48e755d835947);
+            ).addTo(map_720e099fcc6d4d2a9488354f0699b8be);
 
 
-            var icon_0185de71ddaa4091821bfb796835f403 = L.AwesomeMarkers.icon(
+            var icon_c169aa2daa6b4cc3aaca359c22f01a06 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_fa647b103c684b2592db63f3b2fc50d4.setIcon(icon_0185de71ddaa4091821bfb796835f403);
+            marker_bf42544b1ba24a3c8d21192f67c8f19e.setIcon(icon_c169aa2daa6b4cc3aaca359c22f01a06);
 
 
-        var popup_f34cd773a655435788d80f6e2124e59d = L.popup({"maxWidth": "100%"});
+        var popup_306f57a3cbf04262a6fb30b2b02c6daf = L.popup({"maxWidth": "100%"});
 
 
-            var html_8edf525d73804d18aac51bcad0ccf0af = $(`<div id="html_8edf525d73804d18aac51bcad0ccf0af" style="width: 100.0%; height: 100.0%;">한솔로지스틱스(주) 성북센터</div>`)[0];
-            popup_f34cd773a655435788d80f6e2124e59d.setContent(html_8edf525d73804d18aac51bcad0ccf0af);
+            var html_7425080159aa41328de5f75df4ed1eba = $(`<div id="html_7425080159aa41328de5f75df4ed1eba" style="width: 100.0%; height: 100.0%;">한솔로지스틱스(주) 성북센터</div>`)[0];
+            popup_306f57a3cbf04262a6fb30b2b02c6daf.setContent(html_7425080159aa41328de5f75df4ed1eba);
 
 
-        marker_fa647b103c684b2592db63f3b2fc50d4.bindPopup(popup_f34cd773a655435788d80f6e2124e59d)
+        marker_bf42544b1ba24a3c8d21192f67c8f19e.bindPopup(popup_306f57a3cbf04262a6fb30b2b02c6daf)
         ;
 
 
 
 
-            var circle_marker_008ebb683a664a1f8aee0a980656a17a = L.circleMarker(
+            var circle_marker_be24b23a40064999adbdfd1d31b320eb = L.circleMarker(
                 [37.62104902, 127.06593559999999],
-                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "skyblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 250, "stroke": true, "weight": 3}
-            ).addTo(map_0082aaf7a1854641aee48e755d835947);
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "skyblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(map_720e099fcc6d4d2a9488354f0699b8be);
 
 
-        var popup_fef304ba98b44686acaa989674baa443 = L.popup({"maxWidth": "100%"});
+        var popup_5313e4da68654ec3b85c746a69060943 = L.popup({"maxWidth": "100%"});
 
 
-            var html_c802f4f667214cb5a9ddf9468be5643c = $(`<div id="html_c802f4f667214cb5a9ddf9468be5643c" style="width: 100.0%; height: 100.0%;">한솔로지스틱스(주) 성북센터</div>`)[0];
-            popup_fef304ba98b44686acaa989674baa443.setContent(html_c802f4f667214cb5a9ddf9468be5643c);
+            var html_a05c32760910438e89ad3dcb62542d97 = $(`<div id="html_a05c32760910438e89ad3dcb62542d97" style="width: 100.0%; height: 100.0%;">한솔로지스틱스(주) 성북센터</div>`)[0];
+            popup_5313e4da68654ec3b85c746a69060943.setContent(html_a05c32760910438e89ad3dcb62542d97);
 
 
-        circle_marker_008ebb683a664a1f8aee0a980656a17a.bindPopup(popup_fef304ba98b44686acaa989674baa443)
+        circle_marker_be24b23a40064999adbdfd1d31b320eb.bindPopup(popup_5313e4da68654ec3b85c746a69060943)
         ;
 
 
