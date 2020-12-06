@@ -2569,10 +2569,10 @@ function init_morris_charts() {
     if (typeof (Morris) === 'undefined') { return; }
     console.log('init_morris_charts');
 
-    if ($('#graph_bar').length) {
+    if ($('#graph_bar1').length) {
 
         Morris.Bar({
-            element: 'graph_bar',
+            element: 'graph_bar1,
             data: [
                 { device: 'iPhone 4', geekbench: 380 },
                 { device: 'iPhone 4S', geekbench: 655 },
