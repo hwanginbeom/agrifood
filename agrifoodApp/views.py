@@ -6,6 +6,13 @@ def index(request) :
     return render(request, 'index.html')
 
 
+def index2(request):
+    # context = {'ment' : '여기까지 잘되시나요?'}
+    return render(request, 'index_2.html')
+
+
+
+
 def garlic(request) :
     # context = {'ment' : '여기까지 잘되시나요?'}
     return render(request, 'garlic.html')
